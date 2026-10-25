@@ -10,3 +10,7 @@ async function translateText() {
      const output = document.getElementById('output');
      output.textContent = data.responseData.translatedText;
 }
+btn.addEventListener('click', () => {
+  gtag('event', 'order_button_clicked');
+    console.log('Дані відправлено!');
+});
